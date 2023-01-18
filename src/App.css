@@ -1,0 +1,58 @@
+
+
+/* -------------------------------- My styles ----------------------- */
+
+body{
+  background-color: black;
+}
+
+.header{
+
+  margin-top: 2vh;
+}
+
+.header-title{
+  color:white;
+}
+
+
+/* ----- NAV MENU Styles ---- */
+.navMenu-container{
+  margin: auto;
+  width: 50%;
+
+
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.navMenu-item{
+  text-align: center
+}
+
+/* ----- END NAV MENU Styles ---- */
+
+
+
+/* ----- About ME Styles ---- */
+
+.aboutBox{
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  margin:auto;
+ /* width: fit-content; */
+  border: solid rgb(25, 118, 210);
+  border-width: 8px;
+
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.aboutText{
+  text-align: justify;
+}
+
+
+/* ----- END About ME Styles ---- */
