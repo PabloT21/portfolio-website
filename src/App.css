@@ -31,13 +31,18 @@ body{
   text-align: center
 }
 
+.navMenu-text{
+  color:white;
+  font-size: medium;
+}
+
 /* ----- END NAV MENU Styles ---- */
 
 
 
 /* ----- About ME Styles ---- */
 
-.aboutBox{
+.aboutMe-box{
   background-color: white;
   width: 80%;
   border-radius: 10px;
@@ -50,7 +55,7 @@ body{
   grid-template-columns: 30% 70%;
 }
 
-.aboutText{
+.aboutMe-text{
   text-align: justify;
 }
 
