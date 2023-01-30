@@ -3,17 +3,89 @@
 /* -------------------------------- My styles ----------------------- */
 
 body{
-  background-color: black;
+  background-color: #080808;
 }
 
-.header{
-
-  margin-top: 2vh;
+.bodyContainer{
+  
+  margin-left: 20vw;
+  padding: 0px 10px;
+  width:auto;
 }
 
-.header-title{
+
+#header-title{
+  font-family: 'Cream Cake';
+  font-weight: 500;        
   color:white;
+  font-size:8vw;
+  text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+
+#header-subtitle{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;        
+  color:rgb(28, 184, 219);
+  font-size:2vw;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.writing-container {
+  margin:auto;
+  width: fit-content;
+	display: flex;
+    table-layout:fixed;
+}
+
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+svg:hover {
+  transform: scale(1.1);
+}
+
+
+
+#writing-machine {
+  position:absolute;
+  right:0;
+  width:0;
+  background: black;
+  border-left: 1px solid white;
+  animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 55% }
+    to { width:27% }
+}
+
+
+
+.section-title{
+  font-family: 'Cream Cake';
+  font-weight: 400;        
+  color:rgb(28, 184, 219);
+  font-size:4vw;
+  text-align: left;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@font-face {
+  font-family: "Cream Cake";
+  src: local("Cream Cake"),
+   url("./fonts/Cream Cake.ttf") format("truetype");
+  font-weight: bold;
+  }
+
+
 
 
 /* ----- NAV MENU Styles ---- */
@@ -28,13 +100,29 @@ body{
 }
 
 .navMenu-item{
+  margin-top: 5vh;
   text-align: center
 }
 
 .navMenu-text{
+  font-family: 'LilGroteskRegular'; 
   color:white;
   font-size: medium;
+  text-align: start;
+  text-shadow: 2px 2px 4px #000000;
 }
+
+.navMenu-icon{
+  display: flexbox;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .navMenu-container{
+    width: 90%;
+  }
+}
+
 
 /* ----- END NAV MENU Styles ---- */
 
@@ -43,17 +131,32 @@ body{
 /* ----- About ME Styles ---- */
 
 .aboutMe-box{
-  background-color: white;
+  background-color: #242124;
   width: 80%;
-  border-radius: 10px;
   margin:auto;
+  padding: 20px;
  /* width: fit-content; */
-  border: solid rgb(25, 118, 210);
-  border-width: 8px;
-
+  border: solid #47D1CC;
+  border-width: 5px; 
+  border-radius: 10px;
+  position: relative;
   display: grid;
   grid-template-columns: 30% 70%;
 }
+
+.char-img{
+  position: relative;
+  object-fit: contain;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  border: solid black 5px;
+  border-radius: 10px;
+  background-color: white;
+
+}
+
 
 .aboutMe-text{
   text-align: justify;
@@ -61,3 +164,88 @@ body{
 
 
 /* ----- END About ME Styles ---- */
+
+
+/* ---- SIDE Menu Styles ---- */
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20vw; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #47D1CC; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+@media screen and (max-height: 600px) {
+
+  .char-img{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .sidenav a{
+      grid-template-columns: 100%;
+  }
+  .navMenu-text{
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .aboutMe-box{
+    display: grid;
+    grid-template-columns: 90%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    
+  }
+
+  .aboutMe-text{
+    text-align: center;
+  }
+
+  .sidenav{
+    display: none;
+  }
+
+  .bodyContainer{
+    margin-left: 0;
+  }
+
+  #header-title{
+    font-size:15vw;
+  }
+
+  #header-subtitle{
+    font-size: 5vw;
+  }
+
+}

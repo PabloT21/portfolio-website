@@ -11,6 +11,7 @@ export default class NavMenu extends Component {
   render() {
     return (
       <div className='navMenu-container'>
+
         
         <div className='navMenu-item'>
             <PersonIcon color="primary" fontSize="large"></PersonIcon>
