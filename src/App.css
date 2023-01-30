@@ -1,4 +1,12 @@
 
+@font-face {
+  font-family: "Cream Cake";
+  src: local("Cream Cake"),
+   url("./fonts/Cream Cake.ttf") format("truetype");
+  font-weight: bold;
+  }
+
+
 
 /* -------------------------------- My styles ----------------------- */
 
@@ -13,6 +21,20 @@ body{
   width:auto;
 }
 
+#language-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 25% 10% 25%;
+  
+
+}
+
+.language-icon{
+  object-fit: contain;
+  width: 4vw;
+  border: solid black 4px;
+  border-radius: 5px;
+}
 
 #header-title{
   font-family: 'Cream Cake';
@@ -49,7 +71,11 @@ svg:hover {
   transform: scale(1.1);
 }
 
-
+.basic-text{
+  color:white;
+  font-size: x-large;
+  text-align: justify;
+}
 
 #writing-machine {
   position:absolute;
@@ -66,34 +92,10 @@ svg:hover {
 }
 
 
-
-.section-title{
-  font-family: 'Cream Cake';
-  font-weight: 400;        
-  color:rgb(28, 184, 219);
-  font-size:4vw;
-  text-align: left;
-
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-@font-face {
-  font-family: "Cream Cake";
-  src: local("Cream Cake"),
-   url("./fonts/Cream Cake.ttf") format("truetype");
-  font-weight: bold;
-  }
-
-
-
-
 /* ----- NAV MENU Styles ---- */
 .navMenu-container{
   margin: auto;
   width: 50%;
-
-
 
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -128,20 +130,21 @@ svg:hover {
 
 
 
-/* ----- About ME Styles ---- */
+/* ----- Section Styles ---- */
 
-.aboutMe-box{
+.section-box{
   background-color: #242124;
   width: 80%;
   margin:auto;
   padding: 20px;
  /* width: fit-content; */
-  border: solid #47D1CC;
   border-width: 5px; 
   border-radius: 10px;
   position: relative;
   display: grid;
   grid-template-columns: 30% 70%;
+
+  margin-bottom: 5vh;
 }
 
 .char-img{
@@ -157,9 +160,21 @@ svg:hover {
 
 }
 
+.section-title{
+  font-family: 'Cream Cake';
+  font-weight: 400;        
+  color:rgb(28, 184, 219);
+  font-size:4vw;
+  text-align: left;
 
-.aboutMe-text{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.section-text{
   text-align: justify;
+  width:max-content
 }
 
 
@@ -210,6 +225,15 @@ svg:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .section-title{
+    text-align: center;
+    font-size: 5vh;
+  }
+
+  .section-text{
+    text-align: justify;
+  }
+
   .sidenav a{
       grid-template-columns: 100%;
   }
@@ -220,7 +244,7 @@ svg:hover {
 }
 
 @media screen and (max-width: 650px) {
-  .aboutMe-box{
+  .section-box{
     display: grid;
     grid-template-columns: 90%;
     padding-left: 5vw;
@@ -228,9 +252,7 @@ svg:hover {
     
   }
 
-  .aboutMe-text{
-    text-align: center;
-  }
+
 
   .sidenav{
     display: none;

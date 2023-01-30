@@ -1,5 +1,7 @@
 import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
+
 import './App.css'
 
 // Fonts
@@ -16,6 +18,8 @@ import Header from './components/Header'
 
 import SideMenu from './components/SideMenu' 
 
+import SectionContainer from './components/SectionContainer'
+
 
 import AboutMe from './components/AboutMe'
 
@@ -28,15 +32,16 @@ function App() {
     <div className="App">
       <SideMenu></SideMenu>
       <div className='bodyContainer'>
-          <h1 id="header-title"> Pablo Terrone</h1>
-          <div className='writing-container'>
-            <h2 id="header-subtitle"> Desarrollador web FullStack
-              <span id='writing-machine'>&#160;
-              </span>
-            </h2>
-          </div>
+          <Header/>
+          <SectionContainer title="Sobre mí">          
+            <AboutMe/>  
+          </SectionContainer>
+
+          <SectionContainer title="Sobre mí">          
+            <AboutMe/>  
+          </SectionContainer>
+
           <br></br>
-          <AboutMe></AboutMe>
       </div>
     </div>
   )
