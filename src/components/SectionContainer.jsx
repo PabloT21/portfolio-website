@@ -6,8 +6,10 @@ const sectionContainer = ( { children,title } ) =>{
         <div className='section-box'>
             <div className='section-text'>
                 <h1 className='section-title'> {title} </h1>
+                </div>
+                <br></br>    
                 {children}
-            </div>
+            
         </div>
     );
   

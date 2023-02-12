@@ -18,7 +18,10 @@ import Header from './components/Header'
 
 import SideMenu from './components/SideMenu' 
 
+
 import SectionContainer from './components/SectionContainer'
+
+import CardSection from './components/CardSection' 
 
 
 import AboutMe from './components/AboutMe'

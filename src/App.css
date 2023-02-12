@@ -75,6 +75,7 @@ svg:hover {
   color:white;
   font-size: x-large;
   text-align: justify;
+  width: max-content;
 }
 
 #writing-machine {
@@ -109,7 +110,7 @@ svg:hover {
 .navMenu-text{
   font-family: 'LilGroteskRegular'; 
   color:white;
-  font-size: medium;
+  font-size: x-large;
   text-align: start;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -141,8 +142,6 @@ svg:hover {
   border-width: 5px; 
   border-radius: 10px;
   position: relative;
-  display: grid;
-  grid-template-columns: 30% 70%;
 
   margin-bottom: 5vh;
 }
@@ -174,11 +173,78 @@ svg:hover {
 
 .section-text{
   text-align: justify;
-  width:max-content
+  width:fit-content
 }
 
 
 /* ----- END About ME Styles ---- */
+
+/* ----- Card SECTION ---- */
+
+.card{
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  width: 18vw;
+  border: solid 5px black;
+  border-radius: 8px;
+  height: 30vh;
+  align-self: center;
+  justify-self: center;
+
+  transition: .5s;
+}
+
+.card:hover{
+  transform: scale(1.15);
+}
+
+.card-text{
+  color:white;
+}
+
+.card-icon{
+  width: 80%;
+  object-fit: contain;
+}
+
+.card-display{
+  text-align: center;
+}
+
+.card-title{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: center;
+  align-self: center;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  color:white;
+}
+
+.about-me{
+  width: 100%;
+}
+
+.cards-container{
+  place-items: center;
+  width:100%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 2vw;
+
+  align-items: center;
+
+}
+
+.cards-container:hover > :not(:hover){
+  opacity: .4;
+}
+
+
+/* ----- END Card SECTION ---- */
+
 
 
 /* ---- SIDE Menu Styles ---- */
@@ -228,6 +294,11 @@ svg:hover {
   .section-title{
     text-align: center;
     font-size: 5vh;
+  }
+  .cards-container{
+
+    grid-template-columns: 40% 40%;
+  
   }
 
   .section-text{
