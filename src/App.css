@@ -135,7 +135,7 @@ svg:hover {
 
 .section-box{
   background-color: #242124;
-  width: 80%;
+  width: 90%;
   margin:auto;
   padding: 20px;
  /* width: fit-content; */
@@ -242,7 +242,7 @@ svg:hover {
 
 .card-level{
   display: grid;
-
+  background-color: black;
   border: solid 1px black;
   border-radius: 10px ;
   margin-top: 5px;
@@ -262,7 +262,7 @@ svg:hover {
   place-items: center;
   width:100%;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 23% 23% 23% 23%;
   grid-gap: 2vw;
 
   justify-content: center;
@@ -318,6 +318,10 @@ svg:hover {
 
   .char-img{
     display: none;
+  }
+  .sidenav{
+    justify-content: center;
+    align-items: center;
   }
 
 }

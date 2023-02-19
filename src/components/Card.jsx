@@ -8,19 +8,17 @@ const Card = ({icon,color,title,text,xp}) => {
     console.log(param)
     switch(param) {
       case 1:
-        return 'red';
-      case 1.5:
-        return "orange" 
+        return {"color": '#D3212C', "level": "Principiante"};
       case 2:
-        return 'green';
-      case 2.5:
-        return 'green';
+        return {"color": '#FF980E', "level": "Intermedio"};
       case 3:
-        return 'green';
+        return {"color": '#069C56', "level": "Avanzado"};
       default:
-        return "none";
+        return {"color": 'red', "level": "Principiante"};
     }
   }
+
+  const levelData = renderSwitch(parseInt(xp));
 
   return (
     <div className='card-display'>
@@ -30,8 +28,8 @@ const Card = ({icon,color,title,text,xp}) => {
         <img className='card-icon' src={icon}></img>
 
     </div>
-        <div className='card-level' style={{ backgroundColor: renderSwitch(parseInt(xp))}}>
-          <p className="card-text"><span class="card-text" style={{fontWeight: "bold", fontSize: "18px", color: "white" }}>{xp} años de experiencia </span></p>
+        <div className='card-level' style={{   }}>
+          <p className="card-text" style={{ fontWeight: "bold"}}> Nivel: <span class="card-text" style={{fontWeight: "bold", fontSize: "18px", color: levelData["color"] }}> {levelData["level"]} </span></p>
         </div>
     <p class="card-text"> {text} </p>
 
