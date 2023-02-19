@@ -9,6 +9,7 @@ export default class AboutMe extends Component {
                 <p className='basic-text'> 
                     Im Pablo Terrone, a 21 years old developer from Argentina.    
                 </p>
+                <h1 className='section-title'> Lenguajes </h1>
                 <CardSection/>
       </div>
 

@@ -18,11 +18,9 @@ import Header from './components/Header'
 
 import SideMenu from './components/SideMenu' 
 
-
 import SectionContainer from './components/SectionContainer'
 
 import CardSection from './components/CardSection' 
-
 
 import AboutMe from './components/AboutMe'
 
@@ -36,10 +34,6 @@ function App() {
       <SideMenu></SideMenu>
       <div className='bodyContainer'>
           <Header/>
-          <SectionContainer title="Sobre mí">          
-            <AboutMe/>  
-          </SectionContainer>
-
           <SectionContainer title="Sobre mí">          
             <AboutMe/>  
           </SectionContainer>
