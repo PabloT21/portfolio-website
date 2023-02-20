@@ -1,8 +1,9 @@
 import React from 'react'
-import illustration from '../assets/cartoonIllustration1.png'
 
 import spanish from '../assets/spanish.webp'
 import english from '../assets/english.webp'
+
+import github from '../assets/logos/github.png'
 
 
 import MailIcon from '@mui/icons-material/Mail';
@@ -21,8 +22,7 @@ const SideMenu = () => {
             <img className='language-icon' src={english}></img>
         </div>
         */}
-
-        <img className='char-img' src={illustration}></img>
+        <p> Mi portafolio </p>
         <div className='navMenu-item'>
             <a href="">
                 <div className='navMenu-icon'>
@@ -58,6 +58,10 @@ const SideMenu = () => {
             </div>
                 <h1 className='navMenu-text'>Contacto</h1>
             </a>
+        </div>
+
+        <div>
+            <img className='side-icon' src={github}></img>
         </div>
 
     </div>

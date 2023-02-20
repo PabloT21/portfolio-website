@@ -16,10 +16,50 @@ body{
 
 .bodyContainer{
   
-  margin-left: 20vw;
+  margin-top: 65px;
   padding: 0px 10px;
   width:auto;
 }
+
+/* ---- SIDE Menu Styles ---- */
+
+.sidenav {
+  height: 65px; /* Full-height: remove this if you want "auto" height */
+  width: 100%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #47D1CC; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  display: grid;
+  grid-template-columns: 20% 15% 15% 15% 15% 20%;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.side-icon{
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+
 
 #language-container{
   display: grid;
@@ -82,7 +122,7 @@ svg:hover {
   position:absolute;
   right:0;
   width:0;
-  background: black;
+  background: #080808;
   border-left: 1px solid white;
   animation: escribir 5s steps(30) infinite alternate;
 }
@@ -188,7 +228,7 @@ svg:hover {
   justify-items: center;
 
   width: 250px;
-  border: solid 5px black;
+  border: solid 8px #504b4b;
   border-radius: 8px;
   height: 150px;
   align-self: center;
@@ -279,38 +319,6 @@ svg:hover {
 
 
 
-/* ---- SIDE Menu Styles ---- */
-
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 18vw; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #47D1CC; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  position: relative;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-
-}
-
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
 
 
@@ -350,7 +358,15 @@ svg:hover {
   
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
+
+.cards-container{
+  grid-template-columns: 40% 40%;
+  column-gap: 40px;
+}
+}
+
+@media screen and (max-width: 700px) {
   .section-box{
     display: grid;
     grid-template-columns: 90%;
@@ -359,7 +375,7 @@ svg:hover {
     
   }
 
-
+ 
 
   .sidenav{
     display: none;

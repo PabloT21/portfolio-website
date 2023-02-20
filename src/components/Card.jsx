@@ -8,11 +8,11 @@ const Card = ({icon,color,title,text,xp}) => {
     console.log(param)
     switch(param) {
       case 1:
-        return {"color": '#D3212C', "level": "Principiante"};
+        return {"color": '#007fff', "level": "Principiante"};
       case 2:
         return {"color": '#FF980E', "level": "Intermedio"};
       case 3:
-        return {"color": '#069C56', "level": "Avanzado"};
+        return {"color": '#ADFF2F', "level": "Avanzado"};
       default:
         return {"color": 'red', "level": "Principiante"};
     }
@@ -31,7 +31,6 @@ const Card = ({icon,color,title,text,xp}) => {
         <div className='card-level' style={{   }}>
           <p className="card-text" style={{ fontWeight: "bold"}}> Nivel: <span class="card-text" style={{fontWeight: "bold", fontSize: "18px", color: levelData["color"] }}> {levelData["level"]} </span></p>
         </div>
-    <p class="card-text"> {text} </p>
 
     </div>
 

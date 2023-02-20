@@ -52,7 +52,7 @@ const CardSection = () => {
             icon={rails}
             color="white"
             title="Ruby on Rails"
-            xp="1"
+            xp="2"
             text="Es mi lenguaje de preferencia para desarrollos Backend, además, es el que mas utilizo en mi trabajo." 
             />
 
