@@ -2,7 +2,11 @@ import { useState } from 'react'
 
 import reactLogo from './assets/react.svg'
 
+
+// CSS Stylesheets
 import './App.css'
+import './Cards.css'
+import './TopNavbar.css'
 
 // Fonts
 <>
@@ -11,7 +15,6 @@ import './App.css'
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"></link>                
 </>                
-
 
 // Components
 import Header from './components/Header' 
@@ -24,7 +27,7 @@ import CardSection from './components/CardSection'
 
 import AboutMe from './components/AboutMe'
 
-
+// END Of IMPORTS
 
 function App() {
   const [count, setCount] = useState(0)

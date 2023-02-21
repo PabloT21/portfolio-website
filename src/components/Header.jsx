@@ -1,18 +1,17 @@
+import { display } from '@mui/system'
 import React, { Component } from 'react'
 
 
 export default class Header extends Component {
   render() {
     return (
-        <div >
+        <div style={{display: "grid", justifyContent: "center"}} >
+
           <h1 id="header-title"> Pablo Terrone</h1>
-          <div className='writing-container'>
-            <h2 id="header-subtitle"> Desarrollador web FullStack
-              <span id='writing-machine'>&#160;
-              </span>
-            </h2>
+          <div style={{display: "flex", justifyContent: "center", width: "fit-content", margin: "auto"}} className="typewriter">
+            <h1>"Desarrollador web Fullstack"</h1>
           </div>
-        </div>
+          </div>
     )
   }
 }

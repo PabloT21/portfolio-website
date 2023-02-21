@@ -10,6 +10,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import PersonIcon from '@mui/icons-material/Person';
 
+
 const SideMenu = () => {
   return (
     <div className="sidenav">
@@ -21,47 +22,55 @@ const SideMenu = () => {
             <img className='language-icon' src={english}></img>
         </div>
         */}
-        <p> Mi portafolio </p>
         <div className='navMenu-container'>
+
+        <a href="">
         <div className='navMenu-item'>
-            <a href="">
                 <div className='navMenu-icon'>
-                    <PersonIcon style={{ color: "white" }}  fontSize="large"></PersonIcon>
+                    <PersonIcon style={{ color: "black" }}  fontSize="medium"></PersonIcon>
                 </div>
                 <h1 className='navMenu-text'>Sobre mí</h1>
-            </a>    
         </div>
+        </a>    
 
-        <div className='navMenu-item'>
-            <a href="">
+
+        
+            <a className='navMenu-item' href="">
+            <div className='navMenu-item'>
                 <div className='navMenu-icon'>
-                    <WorkIcon  style={{ color: "white" }} fontSize="large"></WorkIcon>
+                    <WorkIcon  style={{ color: "black" }} fontSize="medium"></WorkIcon>
                 </div>
                 <h1 className='navMenu-text'>Experiencia</h1>
+                </div>
+
             </a>
-        </div>
 
-
+        <a href="">
         <div className='navMenu-item'>
-            <a href="">
                 <div className='navMenu-icon'>
-                    <SchoolIcon  style={{ color: "white" }} fontSize="large"></SchoolIcon>
+                    <SchoolIcon  style={{ color: "black" }} fontSize="medium"></SchoolIcon>
                 </div>
                 <h1 className='navMenu-text'>Estudios</h1>
-            </a>
         </div>
+        </a>
 
-        <div className='navMenu-item'>
+
           <a href="">
+          <div className='navMenu-item'>
+
             <div className='navMenu-icon'>
-                <MailIcon  style={{ color: "white" }} fontSize="large"></MailIcon>
+                <MailIcon  style={{ color: "black" }} fontSize="medium"></MailIcon>
             </div>
                 <h1 className='navMenu-text'>Contacto</h1>
+        </div>
+        </a>
+
+
+        </div>
+        <div style={{ display: "flex" }}>
+            <a href="https://github.com/PabloT21">
+                <img className='side-icon' src={github}></img>
             </a>
-        </div>
-        </div>
-        <div>
-            <img className='side-icon' src={github}></img>
         </div>
 
     </div>
