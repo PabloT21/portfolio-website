@@ -5,7 +5,6 @@ import english from '../assets/english.webp'
 
 import github from '../assets/logos/github.png'
 
-
 import MailIcon from '@mui/icons-material/Mail';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
@@ -23,6 +22,7 @@ const SideMenu = () => {
         </div>
         */}
         <p> Mi portafolio </p>
+        <div className='navMenu-container'>
         <div className='navMenu-item'>
             <a href="">
                 <div className='navMenu-icon'>
@@ -59,7 +59,7 @@ const SideMenu = () => {
                 <h1 className='navMenu-text'>Contacto</h1>
             </a>
         </div>
-
+        </div>
         <div>
             <img className='side-icon' src={github}></img>
         </div>
