@@ -11,7 +11,7 @@
 /* -------------------------------- My styles ----------------------- */
 
 body{
-  background-color: #080808;
+  background-color: #131417;
 }
 
 .bodyContainer{
@@ -54,33 +54,6 @@ svg:hover {
   width: max-content;
 }
 
-/* ----- NAV MENU Styles ---- */
-.navMenu-container{
-  margin: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-
-.navMenu-item{
-  display: grid;
-  grid-template-columns: auto auto;
-  text-align: center;
-  column-gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  width: max-content;
-}
-
-.navMenu-text{
-  font-family: 'LilGroteskRegular'; 
-  color:white;
-  font-size: x-large;
-  text-align: start;
-  text-shadow: 2px 2px 4px #000000;
-  padding-top: 0px;
-}
 
 
 
@@ -119,7 +92,6 @@ svg:hover {
 /* ----- Section Styles ---- */
 
 .section-box{
-  background-color: #242124;
   width: 90%;
   margin:auto;
   padding: 20px;
@@ -161,20 +133,34 @@ svg:hover {
   width:fit-content
 }
 
-
-/* ----- END About ME Styles ---- */
-
-/* ----- Card SECTION ---- */
-
-
-
-.cards-container:hover > :not(:hover){
-  opacity: 0.8;
+.basic-box-container{
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  margin-left: 20px;
+  margin-right: 20px;
+  column-gap: 20px;
 }
 
+.basic-box{
+  text-align: center;
+  background-color: #242124;
+  border: solid 4px #242124;
+  border-radius: 5px;
+  height: 350px;
+  position: relative;
+  object-fit: contain;
+}
+.basic-box-img{
+  position: absolute;
+  max-height: 150px;
+  bottom:5%;
+  transform: translateX(-50%);
+}
 
-/* ----- END Card SECTION ---- */
-
+.basic-title{
+  color: #FF980E;
+}
+/* ----- END About ME Styles ---- */
 
 
 
@@ -187,6 +173,14 @@ svg:hover {
   }
   .sidenav{
 
+  }
+
+}
+
+@media screen and (max-width: 1500px) {
+  .basic-box-container{
+    justify-content: center;
+    grid-template-columns: 40% 40%;
   }
 
 }
@@ -215,13 +209,7 @@ svg:hover {
   
 }
 
-@media screen and (max-width: 1000px) {
 
-.cards-container{
-  grid-template-columns: 40% 40%;
-  column-gap: 40px;
-}
-}
 
 @media screen and (max-width: 1300px) {
 
@@ -262,6 +250,13 @@ svg:hover {
 
   #header-subtitle{
     font-size: 5vw;
+  }
+
+  .basic-box-container{
+    grid-template-columns: 90%;
+    row-gap: 20px;
+    justify-content: center;
+
   }
 
 }

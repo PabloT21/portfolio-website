@@ -36,3 +36,32 @@
     height: 50px;
     margin: auto;
   }
+
+  /* ----- NAV MENU Styles ---- */
+.navMenu-container{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  .navMenu-item{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: max-content;
+  }
+  
+  .navMenu-text{
+    font-family: 'LilGroteskRegular'; 
+    color:white;
+    font-size: x-large;
+    text-align: start;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 0px;
+  }
+  

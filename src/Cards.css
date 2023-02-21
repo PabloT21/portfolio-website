@@ -5,7 +5,7 @@
     justify-items: center;
   
     width: 250px;
-    border: solid 8px #504b4b;
+    border: solid 7px #1CB8DB;
     border-radius: 8px;
     height: 150px;
     align-self: center;
@@ -86,3 +86,36 @@
     align-items: center;
   
   }
+
+  .cards-container:hover > :not(:hover){
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 1300px) {
+
+    .cards-container{
+      grid-template-columns: 30% 30% 30% ;
+      column-gap: 40px;
+    }
+    
+    }
+
+    @media screen and (max-width: 950px) {
+
+      .cards-container{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 40px;
+        row-gap: 30px;
+      }
+
+    @media screen and (max-width: 800px) {
+
+      .cards-container{
+        display: grid;
+        grid-template-columns: 80%;
+        column-gap: 40px;
+        row-gap: 30px;
+      }
+      
+      }

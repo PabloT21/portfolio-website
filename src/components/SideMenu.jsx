@@ -4,6 +4,8 @@ import spanish from '../assets/spanish.webp'
 import english from '../assets/english.webp'
 
 import github from '../assets/logos/github.png'
+import linkedin from '../assets/logos/linkedin.png'
+
 
 import MailIcon from '@mui/icons-material/Mail';
 import WorkIcon from '@mui/icons-material/Work';
@@ -67,9 +69,12 @@ const SideMenu = () => {
 
 
         </div>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
             <a href="https://github.com/PabloT21">
                 <img className='side-icon' src={github}></img>
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-terrone-37b19216b/">
+                <img className='side-icon' src={linkedin}></img>
             </a>
         </div>
 
