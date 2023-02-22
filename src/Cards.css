@@ -11,7 +11,7 @@
     align-self: center;
     justify-self: center;
     justify-content: center;
-    box-shadow: #1CB8DB 0px 22px 70px 4px;
+    box-shadow: #1CB8DB 0px 0px 35px 4px;
     transition: .5s;
   }
   
@@ -31,6 +31,8 @@
     margin-bottom: 2px;
   
     border-radius: black;
+    font-size: larger;
+    font-family: 'Lato', sans-serif;
   }
   
   .card-icon{
@@ -49,21 +51,24 @@
   }
   
   .card-title{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lato', sans-serif;    
     justify-content: center;
     align-self: center;
     margin-top: 1px;
     margin-bottom: 5px;
     color:white;
+    margin-bottom: 15px;
     
   }
   
   .card-level{
     display: grid;
-    background-color: black;
-    border: solid 1px black;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2);    
+    border: solid 0px black;
     border-radius: 10px ;
-    margin-top: 5px;
+    margin-top: 10px;
     width: max-content;  
     justify-self: center;
     z-index: 3;

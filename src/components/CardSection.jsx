@@ -101,7 +101,7 @@ const CardSection = () => {
 
           <Card
             icon={python }
-            color="#357AE9"
+            color="#6da0f2"
             title="Python"
             xp="3"
             text="Es mi lenguaje de preferencia para desarrollos Backend, además, es el que mas utilizo en mi trabajo." 

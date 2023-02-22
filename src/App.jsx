@@ -1,7 +1,5 @@
 import { useState } from 'react'
 
-import reactLogo from './assets/react.svg'
-
 
 // CSS Stylesheets
 import './App.css'
@@ -41,6 +39,14 @@ function App() {
           <SectionContainer title="Sobre mí">          
             <AboutMe/>  
           </SectionContainer>
+
+          <SectionContainer title="Experiencia">          
+          </SectionContainer>
+
+
+          <SectionContainer title="Estudios">          
+          </SectionContainer>
+
           <br></br>
       </div>
     </div>

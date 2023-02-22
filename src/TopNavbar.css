@@ -5,12 +5,17 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #38C3BE; /* Black */
+
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.2);
+      /* Black */
     overflow-x:initial; /* Disable horizontal scroll */
     display: grid;
     grid-template-columns: 70% 20%;
     align-content: center;
     padding-left: 40px;
+
   }
   
   .sidenav a {

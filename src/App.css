@@ -106,6 +106,12 @@ svg:hover {
   position: relative;
 
   margin-bottom: 5vh;
+/*
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+*/
 }
 
 .char-img{
@@ -160,6 +166,11 @@ svg:hover {
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+.basic-box-text{
+  text-align:justify; 
+  font-style: italic;
+}
+
 .basic-box-img{
   position: absolute;
   max-height: 150px;
@@ -199,8 +210,9 @@ svg:hover {
 @media screen and (max-width: 900px) {
   .section-title{
     text-align: center;
-    font-size: 5vh;
+    font-size: 75px;
   }
+
   .cards-container{
 
     grid-template-columns: 40% 40%;
@@ -238,6 +250,9 @@ svg:hover {
     padding-right: 5vw;
     
   }
+
+
+
   .navMenu-container{
     width: 90%;
   }
