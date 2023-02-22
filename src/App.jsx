@@ -34,13 +34,13 @@ function App() {
 
   return (
     <div className="App">
+      
       <SideMenu></SideMenu>
       <div className='bodyContainer'>
           <Header/>
           <SectionContainer title="Sobre mí">          
             <AboutMe/>  
           </SectionContainer>
-
           <br></br>
       </div>
     </div>
