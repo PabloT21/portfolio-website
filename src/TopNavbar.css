@@ -63,10 +63,10 @@
   
   .navMenu-text{
     font-family: 'Lato', sans-serif; 
-    color:white;
+    color:black;
     font-size: x-large;
     text-align: start;
-    text-shadow: 2px 2px 4px #000000;
+    /*text-shadow: 2px 2px 4px #000000;*/
     padding-top: 0px;
   }
   

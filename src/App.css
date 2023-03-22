@@ -21,7 +21,7 @@
 /* -------------------------------- My styles ----------------------- */
 
 body{
-  background-color: #131417; 
+  background-color: #F5F5F5; 
   /*background-image: url( './assets/waves.svg' );
   background-repeat: no-repeat;
 background-size: cover;
@@ -41,9 +41,9 @@ display: block; */
 
 
 #header-title{
-  font-family: 'OstrichSansInline';
+  font-family: 'Cream Cake';
   font-weight: 500;        
-  color:rgb(213, 41, 187);
+  color:#2F80ED;
   font-size:8vw;
   text-align: center;
 
@@ -60,7 +60,7 @@ svg {
 
 
 .basic-text{
-  color:white;
+  color:black;
   font-size: x-large;
   text-align: justify;
   width: max-content;
@@ -72,7 +72,7 @@ svg {
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  color: rgb(28, 184, 219)  ;
+  color: #AED6F1 ;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(28, 184, 219);
