@@ -19,25 +19,23 @@ export default class AboutMe extends Component {
                 <div className='basic-box-container'>
                     <div className='basic-box'>
                       <h2 className='basic-title'>Sistema operativo</h2>
-                      <p className='basic-box-text'> Utilizo Ubuntu desde 2020, es mi SO preferido a la hora de desarrollar un sitio web o aplicación</p>
                       <img className='basic-box-img' src={linux}></img>
                     </div>
 
                     <div className='basic-box'>
-                      <h2 className='basic-title'>Entornos</h2>
-                      <p  className='basic-box-text'> Para armar mis entornos locales o de producción utilizo Docker, ya que resulta eficiente por su virtualización, es fácil de mantener y actualizar, entre otras cosas.</p>
+                    <h2 className='basic-title'>Entornos virtuales</h2>
+
                       <img className='basic-box-img' src={docker}></img>
                     </div>
 
                     <div className='basic-box'>
                       <h2 className='basic-title'>Versionado de código</h2>
-                      <p  className='basic-box-text'> Para armar mis entornos locales o de producción utilizo Docker, ya que resulta eficiente por su virtualización, es fácil de mantener y actualizar, entre otras cosas.</p>
                       <img className='basic-box-img' src={github}></img>
                     </div>
 
                 </div>
                 <br></br>
-                <h1 className='section-title'> Mi stack </h1>
+                <h1 className='section-subtitle'> Mi stack </h1>
                 <br></br>
                 <CardSection/>
       </div>
