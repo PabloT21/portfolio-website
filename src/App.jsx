@@ -25,6 +25,9 @@ import CardSection from './components/CardSection'
 
 import AboutMe from './components/AboutMe'
 
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+
 // END Of IMPORTS
 
 function App() {
@@ -40,11 +43,16 @@ function App() {
             <AboutMe/>  
           </SectionContainer>
 
-          <SectionContainer title="Experiencia">          
+          <div >
+            <h1 className="section-title">Experiencia <WorkIcon fontSize="inherit"></WorkIcon></h1>
+          </div> 
+
+          <SectionContainer title="">          
           </SectionContainer>
 
-
-          <SectionContainer title="Estudios">          
+          <h1 className="section-title">Estudios <SchoolIcon fontSize="inherit"></SchoolIcon></h1>
+          
+          <SectionContainer title="">          
           </SectionContainer>
 
           <br></br>

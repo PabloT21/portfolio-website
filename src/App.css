@@ -11,6 +11,11 @@
   src: url("./fonts/OstrichSans-Black.otf");
 }
 
+@font-face {
+  font-family: "OstrichSansInline" ;
+  src: url("./fonts/OstrichSansInline-Italic.otf");
+}
+
 
 
 /* -------------------------------- My styles ----------------------- */
@@ -36,14 +41,14 @@ display: block; */
 
 
 #header-title{
-  font-family: 'Cream Cake';
+  font-family: 'OstrichSansInline';
   font-weight: 500;        
-  color:white;
+  color:rgb(213, 41, 187);
   font-size:8vw;
   text-align: center;
 
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 
@@ -52,9 +57,7 @@ svg {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
-svg:hover {
-  transform: scale(1.1);
-}
+
 
 .basic-text{
   color:white;
