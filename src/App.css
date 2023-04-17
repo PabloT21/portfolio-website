@@ -16,7 +16,7 @@
   src: url("./fonts/OstrichSansInline-Italic.otf");
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 /* -------------------------------- My styles ----------------------- */
 
@@ -43,7 +43,7 @@ display: block; */
 #header-title{
   font-family: 'OstrichSansInline';
   font-weight: 500;        
-  color:rgb(213, 41, 187);
+  color:rgb(28, 184, 219) ;
   font-size:8vw;
   text-align: center;
 
@@ -108,6 +108,7 @@ svg {
   width: 90%;
   margin:auto;
   padding: 20px;
+  padding-bottom: 0px;
  /* width: fit-content; */
   border-width: 5px; 
   border-radius: 10px;
@@ -176,11 +177,15 @@ svg {
   background-color: white;
   border: solid 0px #242124;
   border-radius: 50px;
-  height: 220px;
+  height: 200px;
   position: relative;
   object-fit: contain;
   padding-left: 10px;
   padding-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -191,7 +196,8 @@ svg {
 }
 
 .basic-box-img{
-  position: absolute;
+  justify-self: center;
+  margin: auto;
   max-height: 150px;
   bottom:5%;
   transform: translateX(-50%);
@@ -199,6 +205,7 @@ svg {
 
 .basic-title{
   color: rgb(67, 57, 57);
+  font-family: 'Montserrat', sans-serif;
 }
 /* ----- END About ME Styles ---- */
 
