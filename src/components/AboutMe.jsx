@@ -8,11 +8,15 @@ import docker from '../assets/logos/docker.png'
 
 import github from '../assets/logos/github.png'
 
+import SectionContainer from './SectionContainer'
+
 
 export default class AboutMe extends Component {
   render() {
     return (
-      <div className='about-me' style={{marginTop:"0px"}}>
+      <div className='about-me' style={{marginTop:"75px"}}>
+            <SectionContainer title="Sobre mí">          
+          </SectionContainer>
                 <p className='basic-text'> 
                   Soy Pablo Terrone, tengo 21 años y soy un desarrollador web de Argentina.
                 </p>

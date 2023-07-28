@@ -49,8 +49,8 @@
 .navMenu-container{
     margin: auto;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    justify-content: space-between;
   }
   
   .navMenu-item{

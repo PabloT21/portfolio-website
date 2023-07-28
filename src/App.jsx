@@ -18,15 +18,14 @@ import './TopNavbar.css'
 import Header from './components/Header' 
 
 import SideMenu from './components/SideMenu' 
-
-import SectionContainer from './components/SectionContainer'
-
 import CardSection from './components/CardSection' 
 
 import AboutMe from './components/AboutMe'
+import Experiencia from './components/Experiencia'
+import Estudios from './components/Estudios'
 
-import WorkIcon from '@mui/icons-material/Work';
-import SchoolIcon from '@mui/icons-material/School';
+import { Routes, Route } from "react-router-dom";
+
 
 // END Of IMPORTS
 
@@ -36,24 +35,18 @@ function App() {
   return (
     <div className="App">
       
+      <Routes>
+        <Route path="/" element={ <Header/> } />
+        <Route path="about" element={ <AboutMe/> } />
+        <Route path="experience" element={ <Experiencia/> } />
+        <Route path="studies" element={ <Estudios/> } />
+
+
+      </Routes>
+
       <SideMenu></SideMenu>
+ 
       <div className='bodyContainer'>
-          <Header/>
-          <SectionContainer title="Sobre mí">          
-            <AboutMe/>  
-          </SectionContainer>
-
-          <div >
-            <h1 className="section-title">Experiencia <WorkIcon fontSize="inherit"></WorkIcon></h1>
-          </div> 
-
-          <SectionContainer title="">          
-          </SectionContainer>
-
-          <h1 className="section-title">Estudios <SchoolIcon fontSize="inherit"></SchoolIcon></h1>
-          
-          <SectionContainer title="">          
-          </SectionContainer>
 
           <br></br>
       </div>

@@ -38,7 +38,12 @@ display: block; */
 /* ---- SIDE Menu Styles ---- */
 
 
-
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center  ;
+}
 
 #header-title{
   font-family: 'OstrichSansInline';
@@ -47,7 +52,6 @@ display: block; */
   font-size:8vw;
   text-align: center;
 
-  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -83,6 +87,8 @@ svg {
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
+  display: inline;
+  text-align: center;
 }
 
 /* The typing effect */
@@ -270,8 +276,7 @@ svg {
 
 @media screen and (max-width: 700px) {
   .section-box{
-    display: grid;
-    grid-template-columns: 90%;
+
     padding-left: 5vw;
     padding-right: 5vw;
     
