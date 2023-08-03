@@ -15,10 +15,8 @@ import './TopNavbar.css'
 </>                
 
 // Components
-import Header from './components/Header' 
-
+import Inicio from './components/Inicio' 
 import SideMenu from './components/SideMenu' 
-import CardSection from './components/CardSection' 
 
 import AboutMe from './components/AboutMe'
 import Experiencia from './components/Experiencia'
@@ -36,7 +34,7 @@ function App() {
     <div className="App">
       
       <Routes>
-        <Route path="/" element={ <Header/> } />
+        <Route path="/" element={ <Inicio/> } />
         <Route path="about" element={ <AboutMe/> } />
         <Route path="experience" element={ <Experiencia/> } />
         <Route path="studies" element={ <Estudios/> } />

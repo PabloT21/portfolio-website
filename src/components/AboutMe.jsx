@@ -14,9 +14,9 @@ import SectionContainer from './SectionContainer'
 export default class AboutMe extends Component {
   render() {
     return (
-      <div className='about-me' style={{marginTop:"75px"}}>
-            <SectionContainer title="Sobre mí">          
-          </SectionContainer>
+      <div>     
+        <h1 className="section-title">Acerca de mí</h1>
+        <div className='about-me'>
                 <p className='basic-text'> 
                   Soy Pablo Terrone, tengo 21 años y soy un desarrollador web de Argentina.
                 </p>
@@ -50,8 +50,8 @@ export default class AboutMe extends Component {
                 <h1 className='section-subtitle'> Mi stack </h1>
                 <br></br>
                 <CardSection/>
+        </div>
       </div>
-
     )
   }
 }
