@@ -24,24 +24,15 @@ export default class AboutMe extends Component {
 
 
                   <div style={{textAlign:"center"}}>
-                    <div className='basic-box'>
                       <img className='basic-box-img' src={linux}></img>
-                    </div>
-                    <h2 className='basic-title' style={{color:"white"}}>Sistema operativo</h2>
                   </div>
 
                   <div style={{textAlign:"center"}}>
-                    <div className='basic-box'>
                       <img className='basic-box-img' src={docker}></img>
-                    </div>
-                    <h2 className='basic-title' style={{color:"white"}}>Entornos virtuales</h2>
                   </div>
 
                   <div style={{textAlign:"center"}}>
-                    <div className='basic-box'>
                       <img className='basic-box-img' src={github}></img>
-                    </div>
-                    <h2 className='basic-title' style={{color:"white"}}>Versionado de código</h2>
                   </div>
 
                   

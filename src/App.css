@@ -61,12 +61,23 @@ svg {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
-.cartoon-image{
-  mask-image: linear-gradient(
-    #131417 80%, transparent
-  )
-  ;
+#cartoon-image{
+  border: solid 8px #1CB8DB;
+  border-radius: 10px;
+  background-color: #343741;
+  animation: pulso 2s infinite; 
+}
 
+@keyframes pulso {
+  0% {
+    border-color: #1766c0; /* Color base */
+  }
+  50% {
+    border-color: #eceeee; /* Color intermedio */
+  }
+  100% {
+    border-color: #1766c0; 
+  }
 }
 
 .two-columns{
