@@ -29,7 +29,7 @@ const Card = ({icon,color,title,text,xp}) => {
 
     </div>
         <div className='card-level' style={{   }}>
-          <p className="card-text" style={{ fontWeight: "bold"}}> Nivel: <span class="card-text" style={{fontWeight: "bold", fontSize: "18px", color: levelData["color"] }}> {levelData["level"]} </span></p>
+          <p className="card-text" style={{ fontWeight: "bold"}}> Nivel: <span className="card-text" style={{fontWeight: "bold", fontSize: "18px", color: levelData["color"] }}> {levelData["level"]} </span></p>
         </div>
 
     </div>
