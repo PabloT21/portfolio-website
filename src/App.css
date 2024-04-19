@@ -309,6 +309,8 @@ svg {
 
 .column1, .column2 {
     width: 100%; 
+    display: flex;
+    justify-content: center;
 }
 
 

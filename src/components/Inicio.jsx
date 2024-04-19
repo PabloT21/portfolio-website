@@ -10,7 +10,7 @@ export default class Inicio extends Component {
           <div style={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>  
             <h1  id="header-title"> Pablo Terrone</h1>
             <div style={{margin: 0, marginBottom: "80px"}} className="typewriter">
-              <h1>"Desarrollador web Fullstack"</h1>
+              <h1>Desarrollador web Fullstack</h1>
             </div>  
             <br></br>
             <div className="two-columns">
