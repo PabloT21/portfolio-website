@@ -16,7 +16,7 @@ import './TopNavbar.css'
 
 // Components
 import Inicio from './components/Inicio' 
-import SideMenu from './components/SideMenu' 
+import Menu from './components/Menu' 
 
 import AboutMe from './components/AboutMe'
 import Experiencia from './components/Experiencia'
@@ -42,7 +42,7 @@ function App() {
 
       </Routes>
 
-      <SideMenu></SideMenu>
+      <Menu></Menu>
  
       <div className='bodyContainer'>
 

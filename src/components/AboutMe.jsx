@@ -18,7 +18,7 @@ export default class AboutMe extends Component {
         <h1 className="section-title">Acerca de mí</h1>
         <div className='about-me'>
                 <p className='basic-text'> 
-                  Soy Pablo Terrone, tengo 21 años y soy un desarrollador web de Argentina.
+                  
                 </p>
                 <div className='basic-box-container'>
 

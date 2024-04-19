@@ -11,7 +11,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import { Link } from "react-router-dom";
 
-const SideMenu = () => {
+const Menu = () => {
   return (
     <div className="sidenav">
         
@@ -76,4 +76,4 @@ const SideMenu = () => {
   )
 }
 
-export default SideMenu
+export default Menu
