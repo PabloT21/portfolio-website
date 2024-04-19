@@ -61,11 +61,19 @@ svg {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
-#cartoon-image{
-  border: solid 8px #1CB8DB;
-  border-radius: 10px;
+#presentation-image{
   background-color: #343741;
-  animation: pulso 2s infinite; 
+
+  width: 200px; 
+  height: 200px; 
+  justify-self: center;
+
+  border: solid 8px #1CB8DB;
+  border-radius: 50%;
+
+  overflow: hidden;
+  animation: pulso 3s infinite; 
+
 }
 
 @keyframes pulso {
@@ -73,7 +81,7 @@ svg {
     border-color: #1766c0; /* Color base */
   }
   50% {
-    border-color: #eceeee; /* Color intermedio */
+    border-color: #1A9CBA; /* Color intermedio */
   }
   100% {
     border-color: #1766c0; 
@@ -82,14 +90,18 @@ svg {
 
 .two-columns{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 
 .basic-text{
   color:white;
-  font-size: x-large;
+  font-size: large;
   text-align: justify;
   width: max-content;
+  background-color: #343741;
+  padding: 30px;
+  border: solid 4px #565b69;
+  border-radius: 10px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -143,19 +155,6 @@ svg {
   backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.2);
 */
-}
-
-.char-img{
-  position: relative;
-  object-fit: contain;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-
-  border: solid black 5px;
-  border-radius: 10px;
-  background-color: white;
-
 }
 
 .section-title{
@@ -237,10 +236,6 @@ svg {
 
 
 @media screen and (max-height: 600px) {
-
-  .char-img{
-    display: none;
-  }
   .sidenav{
 
   }
@@ -260,6 +255,10 @@ svg {
   .section-title{
     text-align: center;
     font-size: 75px;
+  }
+
+  .two-columns{
+    grid-template-columns: 90%;
   }
 
   .cards-container{

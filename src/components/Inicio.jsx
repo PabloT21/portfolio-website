@@ -1,6 +1,6 @@
 import { display } from '@mui/system'
 import React, { Component } from 'react'
-import cartoonImg1 from '../assets/cartoonIllustration1.png'
+import presentationPic from '../assets/presentation.png'
 
 
 export default class Inicio extends Component {
@@ -13,11 +13,13 @@ export default class Inicio extends Component {
               <h1>"Desarrollador web Fullstack"</h1>
 
             </div>  
+            <br></br>
             <div className="two-columns">
-              <img id='cartoon-image' src={cartoonImg1}></img>
+              <img id='presentation-image' src={presentationPic}></img>
               <p className='basic-text'>Hola! Soy Pablo, un desarrollador fullstack de Argentina.</p>
             </div>
-
+            <br></br>
+                <button style={{width: "200px"}}>Descargar CV</button>
           </div>
           
           </div>
