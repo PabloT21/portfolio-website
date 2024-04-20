@@ -43,11 +43,6 @@ function App() {
       </Routes>
 
       <Menu></Menu>
- 
-      <div className='bodyContainer'>
-
-          <br></br>
-      </div>
     </div>
   )
 }
