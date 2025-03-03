@@ -15,7 +15,7 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div>     
-        <h1 className="section-title">Acerca de mí</h1>
+        <h1 className="section-title">Mi stack</h1>
         <div className='about-me'>
                 <p className='basic-text'> 
                   

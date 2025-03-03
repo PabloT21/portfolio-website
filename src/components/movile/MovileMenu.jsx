@@ -29,7 +29,7 @@ const MovileMenu = () => {
         <Link to="about">
           <div className='navMenu-item'>
             <div className='navMenu-icon'> </div>
-            <h1 className='navMenu-text'>Acerca de mí</h1>
+            <h1 className='navMenu-text'>Mi stack</h1>
           </div>
         </Link>
 

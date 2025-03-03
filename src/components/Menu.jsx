@@ -31,7 +31,7 @@ const Menu = () => {
         <Link to="about">
           <div className='navMenu-item'>
             <div className='navMenu-icon'> </div>
-            <h1 className='navMenu-text'>Acerca de mí</h1>
+            <h1 className='navMenu-text'>Mi stack</h1>
           </div>
         </Link>
 
@@ -49,16 +49,6 @@ const Menu = () => {
             <h1 className='navMenu-text'>Estudios</h1>
           </div>
         </Link>
-
-
-          <a href="">
-          <div className='navMenu-item'>
-
-            <div className='navMenu-icon'>
-            </div>
-                <h1 className='navMenu-text'>Contacto</h1>
-        </div>
-        </a>
 
 
         </div>

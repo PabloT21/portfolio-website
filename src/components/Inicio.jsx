@@ -1,8 +1,7 @@
 import { display } from '@mui/system'
 import React, { Component } from 'react'
 import presentationPic from '../assets/presentation.png'
-
-
+import HelperServices from '../services/helperServices';
 export default class Inicio extends Component {
   render() {
     return (
@@ -21,10 +20,13 @@ export default class Inicio extends Component {
                 </div>
                 <div className="column2">
                   <span className='text-block'>
-                    <p className='basic-text'>Hola! Soy Pablo Terrone &#x1F1E6;&#x1F1F7; &#129481; </p>
-                    <p className='basic-text'>Desde el año 2020 trabajo como desarrollador web Full Stack</p>
+                    <p className='basic-text'>Hola! Soy Pablo Terrone &#x1F1E6;&#x1F1F7; &#129481; <br></br>
+                                                Tengo {HelperServices.getYearsUntilNow('2021','2')} años de experiencia trabajando como desarrollador web Full Stack,
+                                                con diversas tecnologías como Symfony, NestJs, React, PHP Legacy, Wordpress, entre otras.<br></br> 
+                                                En 2023 obtuve el título de Analista Programador Universitario en la Universidad Nacional de La Plata, 
+                                                y actualmente estoy realizando mi tesis para la Licenciatura en Sistemas.</p>
 
-                    <button id='main-button'>Descargar CV</button>
+                    <button id='main-button'>Curriculum</button>
                   </span>
                   
                 </div>
