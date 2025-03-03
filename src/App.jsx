@@ -32,7 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      
+      <Menu></Menu>
+
       <Routes>
         <Route path="/" element={ <Inicio/> } />
         <Route path="about" element={ <AboutMe/> } />
@@ -42,7 +43,6 @@ function App() {
 
       </Routes>
 
-      <Menu></Menu>
     </div>
   )
 }

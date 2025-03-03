@@ -21,11 +21,12 @@
 /* -------------------------------- My styles ----------------------- */
 
 body{
-  background-color: #131417; 
-  /*background-image: url( './assets/waves.svg' );
-  background-repeat: no-repeat;
-background-size: cover;
-display: block; */
+  background-color: #31406d; 
+  background: linear-gradient(145deg, #1c1c1c 0%, #0b0b0b 100%);
+  background-repeat: initial;
+  width: 100vw;
+  height: 100vh;
+  margin:0px;
 }
 
 .bodyContainer{
@@ -45,7 +46,6 @@ display: block; */
   text-align: center ;
   height:80vh; 
   width:90vw;
-
   margin:auto;
 }
 
@@ -53,19 +53,22 @@ display: block; */
   font-family: 'OstrichSansInline';
   font-weight: 500;        
   color:rgb(28, 184, 219) ;
-  font-size:9vw;
+  font-size:10rem;
   text-align: center;
 
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
 }
 
+#header-subtitle{
+  font-size:2rem;
+  word-break: break-all;
+}
 
 svg {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 #presentation-image{
-  background-color: #343741;
 
   width: 200px; 
   height: 200px; 
@@ -117,6 +120,7 @@ svg {
   border: none; /* Sin borde */
   border-radius: 5px; /* Bordes redondeados */
   padding: 10px 20px; /* Relleno interior del botón */
+  margin-top:3rem;
   font-size: 16px; /* Tamaño de fuente */
   cursor: pointer; /* Cambio de cursor al pasar el ratón */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
@@ -128,34 +132,50 @@ svg {
   background-color: rgb(138, 97, 204); /* Cambio de color de fondo al pasar el ratón */
 }
 
+
 .container{
   background-color: #343741;
   border: solid 4px #565b69;
-  transition: border-color 0.3s ease; /* Transición suave del color del borde */
-
+  transition: border-color 0.5s ease; /* Transición suave del color del borde */
+  transition: background-color 0.5s ease;  
+  background-color: #222;
+  box-shadow: 0 14px 18px rgb(0, 0, 0);
+  border-radius: 8px;
   border-radius: 10px;
 }
 
 .container:hover{
-  border-color: #8A61CC;
+  border-color: #8340ee;
+  background-color: #2b2d36;
+  animation:backwards 500ms;
+
+  #presentation-image{
+    transition:  0.3s ease;
+  }
 }
 
 .basic-text{
   color:white;
-  font-size: large;
-  padding: 30px;
+  font-size: 1.3rem;
   font-family: 'Lato', sans-serif;
+  text-align: start;
+  margin:0px;
 }
+
+.text-block{
+  padding: 10px;
+}
+
 
 .typewriter h2 {
   color: white;
   font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  overflow: hidden; 
   border-right: .15em solid rgb(28, 184, 219);
-  ; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  ; /* Cursor */
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
@@ -165,13 +185,11 @@ svg {
   font-size: 2vw;
 }
 
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #ccc }
@@ -189,7 +207,6 @@ svg {
   margin:auto;
   padding: 20px;
   padding-bottom: 0px;
- /* width: fit-content; */
   border-width: 5px; 
   border-radius: 10px;
   position: relative;
@@ -255,22 +272,23 @@ svg {
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.basic-box-text{
-  text-align:justify; 
-  font-style: italic;
-}
+  .basic-box-text{
+    text-align:justify; 
+    font-style: italic;
+  }
 
-.basic-box-img{
-  justify-self: center;
-  margin: auto;
-  max-height: 150px;
-  bottom:5%;
-}
+  .basic-box-img{
+    justify-self: center;
+    margin: auto;
+    max-height: 150px;
+    bottom:5%;
+  }
 
-.basic-title{
-  color: rgb(67, 57, 57);
-  font-family: 'Montserrat', sans-serif;
-}
+  .basic-title{
+    color: rgb(67, 57, 57);
+    font-family: 'Montserrat', sans-serif;
+  }
+
 /* ----- END About ME Styles ---- */
 
 
@@ -290,13 +308,20 @@ svg {
     grid-template-columns: 30% 30% 30%;
     column-gap: 20px;
   }
+
+  .banner{
+    padding-top: 15vh;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
+
   .section-title{
     text-align: center;
     font-size: 75px;
   }
+
 
   .two-columns{
     grid-template-columns: 90%;
@@ -338,7 +363,9 @@ svg {
     padding-left: 5vw;
     padding-right: 5vw;
   }
-
+  .banner{
+    padding-top: 20vh;
+  }
   .navMenu-container{
     width: 90%;
   }
@@ -366,5 +393,13 @@ svg {
     justify-content: center;
 
   }
+
+}
+@media screen and (max-width: 350px) {
+
+  #header-title{
+    font-size: 20vw;
+  }
+  
 
 }

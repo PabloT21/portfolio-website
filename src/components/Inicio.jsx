@@ -11,7 +11,7 @@ export default class Inicio extends Component {
             <div>
               <h1  id="header-title"> Pablo Terrone</h1>
               <div style={{margin: 0, marginBottom: "80px"}} className="typewriter">
-                <h2>Desarrollador web Fullstack</h2>
+                <h2 id='header-subtitle'>Desarrollador web Fullstack</h2>
               </div> 
             </div>
             <div>
@@ -20,8 +20,10 @@ export default class Inicio extends Component {
                 <img id='presentation-image' src={presentationPic}></img>
                 </div>
                 <div className="column2">
-                  <span>
-                    <p className='basic-text'>Hola! Soy Pablo &#x1F1E6;&#x1F1F7; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum turpis vel mauris vestibulum, non dictum quam placerat. Maecenas condimentum urna eget eros congue, eget consequat libero vehicula. Duis ac massa nec odio lacinia interdum. Nulla facilisi. Maecenas nec tempor mauris. Suspendisse potenti. Nullam in ante eget felis sagittis eleifend non ac lectus. Quisque fermentum vulputate ipsum, sit amet accumsan velit. Morbi sodales, dui vitae lacinia vestibulum, urna mauris tincidunt tortor, ac rhoncus est justo nec risus</p>
+                  <span className='text-block'>
+                    <p className='basic-text'>Hola! Soy Pablo Terrone &#x1F1E6;&#x1F1F7; &#129481; </p>
+                    <p className='basic-text'>Desde el año 2020 trabajo como desarrollador web Full Stack</p>
+
                     <button id='main-button'>Descargar CV</button>
                   </span>
                   
